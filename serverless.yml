@@ -1,0 +1,17 @@
+
+
+service: es-lambda-service
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: us-east-2
+  role: arn:aws:iam::762105078948:role/users-es-role
+
+
+
+functions:
+  ed:
+    handler: handler.es
